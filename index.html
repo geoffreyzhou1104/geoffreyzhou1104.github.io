@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Geoffrey's personal site — writing, projects, and a bit about me." />
+  <title>Geoffrey — 首页</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Header & footer are injected by assets/js/nav.js -->
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="hero-eyebrow" data-i18n="home.eyebrow">Personal Site</span>
+        <h1 data-i18n="home.heroTitle">Hi, I'm Geoffrey</h1>
+        <p data-i18n="home.heroSubtitle"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="portfolio.html" data-i18n="home.ctaWorks">View my work</a>
+          <a class="btn btn-ghost" href="blog.html" data-i18n="home.ctaBlog">Read the blog</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="writing">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.featuredPosts">Featured Writing</h2>
+        <p class="section-sub" data-i18n="home.featuredPostsSub"></p>
+        <div id="featured-posts"><!-- rendered by article.js --></div>
+        <a class="view-all" href="blog.html" data-i18n="home.viewAllPosts">View all posts →</a>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.featuredWorks">Featured Projects</h2>
+        <p class="section-sub" data-i18n="home.featuredWorksSub"></p>
+        <div id="featured-works"><!-- rendered by works.js --></div>
+        <a class="view-all" href="portfolio.html" data-i18n="home.viewAllWorks">View all work →</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/data/articles.js"></script>
+  <script src="assets/data/works.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/article.js"></script>
+  <script src="assets/js/works.js"></script>
+</body>
+</html>
