@@ -6,6 +6,56 @@
 
 const ARTICLES = [
   {
+    id: "thinking-fast-and-slow",
+    date: "2026-08-12",
+    tags: ["读书", "行为经济学"],
+    cover: "g1",
+    zh: {
+      title: "读书报告：《思考，快与慢》",
+      excerpt:
+        "18 页 PPT 精读卡尼曼：从双系统到前景理论，再到两个自我的分裂——一本可以改变你思维方式的书。",
+      content: [
+        { type: "p", text: "断断续续读完了丹尼尔·卡尼曼的《思考，快与慢》，顺手做了一份 18 页的读书报告。这篇短文是报告的导览，完整 PPT 可以在文末下载。" },
+        { type: "h2", text: "全书骨架" },
+        { type: "p", text: "五大部分、三十八章，从双系统到双自我，逐层揭示人类思维的运作机制：先讲两套思维系统如何分工，再看启发法带来的系统性偏见，接着是过度自信与决策错误，然后是前景理论，最后落在经验自我与记忆自我的分裂上。" },
+        { type: "h2", text: "核心框架：系统 1 与系统 2" },
+        { type: "p", text: "系统 1 快而省力，永远在线，靠联想记忆对世界作出连贯解释；系统 2 慢而费力，负责复杂计算。问题在于：系统 2 不是警觉的守门员，它是个懒汉，经常直接采纳系统 1 的答案——经典的「球拍与球」问题骗的就是它。" },
+        { type: "h2", text: "报告里重点展开的四个模块" },
+        { type: "list", items: [
+          "启发法与偏见：锚定效应、琳达问题与合取谬误、回归平均值；",
+          "过度自信：「知道」的错觉、专家直觉何时可信（卡尼曼与克莱恩的判断法则）；",
+          "前景理论：损失厌恶、禀赋效应、心理账户与框架效应——诺奖级的核心成果；",
+          "两个自我：经验自我与记忆自我，谁才是「我」。",
+        ]},
+        { type: "p", text: "报告最后提炼了九条实用原则，以及贯穿全书的三大对立结构（系统 1 vs 系统 2、经验 vs 记忆、统计直觉 vs 专家直觉），适合打印出来贴在工位上。" },
+        { type: "quote", text: "这是一本可以改变你思维方式的书。读了它，你对工作、世界以及自己的生活的看法都会改变。" },
+        { type: "link", href: "files/thinking-fast-and-slow.pptx", text: "下载完整读书报告（PPTX · 18 页）" },
+      ],
+    },
+    en: {
+      title: "Book Report: Thinking, Fast and Slow",
+      excerpt:
+        "An 18-slide deep read of Kahneman: from the two systems to prospect theory, and the split between two selves — a book that can change how you think.",
+      content: [
+        { type: "p", text: "I finally finished Daniel Kahneman's Thinking, Fast and Slow and turned my notes into an 18-slide report. This post is the guide; the full deck is downloadable at the end." },
+        { type: "h2", text: "The skeleton of the book" },
+        { type: "p", text: "Five parts, 38 chapters, moving from two systems to two selves: how the two thinking systems divide the labor, how heuristics produce systematic biases, where overconfidence and decision errors come from, prospect theory, and finally the split between the experiencing self and the remembering self." },
+        { type: "h2", text: "The core framework: System 1 and System 2" },
+        { type: "p", text: "System 1 is fast, effortless, always on, and constantly makes coherent sense of the world through associative memory. System 2 is slow and deliberate, in charge of hard computation. The catch: System 2 is not a vigilant gatekeeper — it's lazy, and it often just accepts System 1's answer. The classic bat-and-ball question exploits exactly this." },
+        { type: "h2", text: "Four modules the report covers in depth" },
+        { type: "list", items: [
+          "Heuristics & biases: anchoring, the Linda problem and conjunction fallacy, regression to the mean.",
+          "Overconfidence: the illusion of knowing, and when to trust expert intuition (the Kahneman–Klein rules).",
+          "Prospect theory: loss aversion, endowment effect, mental accounting, and framing — the Nobel-caliber core.",
+          "Two selves: the experiencing self vs. the remembering self — which one is \"you\"?",
+        ]},
+        { type: "p", text: "The deck closes with nine practical principles and the three big distinctions running through the whole book (System 1 vs. System 2, experiencing vs. remembering, statistical intuition vs. expert intuition) — worth printing and pinning above your desk." },
+        { type: "quote", text: "This is a book that can change how you think. Read it and your view of your work, the world, and your own life will shift." },
+        { type: "link", href: "files/thinking-fast-and-slow.pptx", text: "Download the full report (PPTX · 18 slides)" },
+      ],
+    },
+  },
+  {
     id: "why-i-write",
     date: "2026-07-12",
     tags: ["随笔", "Writing"],

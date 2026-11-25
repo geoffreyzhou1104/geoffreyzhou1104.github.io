@@ -635,6 +635,12 @@ button {
   color: var(--text-secondary);
 }
 
+/* Download button block inside article body */
+.article-body .article-dl {
+  display: inline-flex;
+  margin: 12px 0 32px;
+}
+
 .article-body li {
   margin-bottom: 8px;
 }

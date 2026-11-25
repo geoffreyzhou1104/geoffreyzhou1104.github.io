@@ -63,6 +63,8 @@
         return `<pre><code>${esc(block.text)}</code></pre>`;
       case "list":
         return `<ul>${block.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+      case "link":
+        return `<a class="btn btn-primary article-dl" href="${esc(block.href)}" download>${esc(block.text)}</a>`;
       default:
         return `<p>${esc(block.text)}</p>`;
     }
