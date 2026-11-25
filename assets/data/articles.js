@@ -6,6 +6,102 @@
 
 const ARTICLES = [
   {
+    id: "why-family-hurts",
+    date: "2026-09-14",
+    tags: ["读书", "心理学"],
+    cover: "g6",
+    zh: {
+      title: "读书报告：《为何家会伤人》",
+      excerpt:
+        "武志红的原生家庭经典：四个层层递进的命题，从夫妻关系讲到分离与边界——理性地读，温柔地用。",
+      content: [
+        { type: "p", text: "读完武志红的《为何家会伤人》，做了一份 22 页的读书分享。这本书讲的是原生家庭如何塑造我们，又如何伤到我们——这篇短文是导览，完整 PPT 可在文末下载。" },
+        { type: "h2", text: "全书地图：四个层层递进的命题" },
+        { type: "list", items: [
+          "命题一：夫妻关系是家庭的核心，孝顺不应凌驾于其上；",
+          "命题二：恋爱是童年模式的复制与修正，我们总在找「熟悉的感觉」；",
+          "命题三：分离是生命中永恒的主题，溺爱不是爱，是阻碍孩子完成分离；",
+          "命题四：别把焦虑转嫁给孩子——孩子的症状，往往是大人的答案。",
+        ]},
+        { type: "h2", text: "报告里最值得反复看的部分" },
+        { type: "p", text: "「中国家庭中的轮回链条」把代际问题画成了一张闭环地图；「有关爱的六个谎言」逐条拆解（如「我爱你，所以你要听我的」）；报告还分别给了父母和被原生家庭困住的人各六条行动清单，以及一页全书总结。" },
+        { type: "p", text: "难得的是报告专门留了一章「理性地读」：讨论这本书的边界——案例驱动、样本偏差、决定论倾向。共情它的洞察，但不把它读成宿命论，这才是对这本书最好的用法。" },
+        { type: "quote", text: "愿我们都能在爱里保持独立。" },
+        { type: "link", href: "files/why-family-hurts.pptx", text: "下载完整读书分享（PPTX · 22 页）" },
+      ],
+    },
+    en: {
+      title: "Book Report: Why Family Hurts",
+      excerpt:
+        "Wu Zhihong's classic on family of origin: four progressive propositions, from marriage to separation and boundaries — read it rationally, use it gently.",
+      content: [
+        { type: "p", text: "After finishing Wu Zhihong's Why Family Hurts, I put together a 22-slide share deck. The book is about how our families of origin shape us — and hurt us. This post is the guide; the full deck is downloadable at the end." },
+        { type: "h2", text: "The map: four progressive propositions" },
+        { type: "list", items: [
+          "One: the couple relationship is the core of a family, above filial piety.",
+          "Two: romantic love replicates and revises childhood patterns — we keep seeking what feels familiar.",
+          "Three: separation is life's eternal theme; spoiling is not love but an obstacle to it.",
+          "Four: don't pass your anxiety to your children — a child's symptoms are often the parents' answer.",
+        ]},
+        { type: "h2", text: "The parts worth revisiting" },
+        { type: "p", text: "The \"cycle of Chinese families\" diagram maps intergenerational patterns into a closed loop; \"six lies about love\" gets dismantled one by one (e.g., \"I love you, so you must obey me\"). The deck also includes two six-item action checklists — one for parents, one for those still trapped by their family of origin — plus a one-page summary of the whole book." },
+        { type: "p", text: "Notably, the deck reserves a chapter for reading it critically: case-driven, sample-biased, and leaning deterministic. Empathize with its insights without turning them into fatalism — that's how this book deserves to be used." },
+        { type: "quote", text: "May we all stay independent while loving." },
+        { type: "link", href: "files/why-family-hurts.pptx", text: "Download the full deck (PPTX · 22 slides)" },
+      ],
+    },
+  },
+  {
+    id: "superforecasting",
+    date: "2026-08-14",
+    tags: ["读书", "决策思维"],
+    cover: "g5",
+    zh: {
+      title: "读书报告：《超预测》",
+      excerpt:
+        "泰洛克二十年研究的结论：预测是可以训练的技能，不是天赋。五项核心技能 + 超预测十诫。",
+      content: [
+        { type: "p", text: "《超预测》是泰洛克与加德纳对长达二十年的预测研究的总结。读完做了一份 14 页报告，这篇短文带你快速走一遍，完整 PPT 在文末下载。" },
+        { type: "h2", text: "核心论点：预测力是可训练的技能" },
+        { type: "p", text: "通过预测锦标赛的严格测评，研究发现：一群「认真业余爱好者」的长期预测准确率，竟能超过专业分析师甚至情报专家。超级预测者不是天才，而是掌握了特定思维习惯的普通人。伯林寓言里的「狐狸」胜过「刺猬」——知道很多小事的人，比只知道一件大事的人预测更准。" },
+        { type: "h2", text: "五项核心技能" },
+        { type: "list", items: [
+          "费米分解：把无法回答的大问题拆成可估算的小问题；",
+          "外部视角：先看基准率，再考虑具体细节；",
+          "概率思维：用概率而非「是/否」表态，用 Brier 分数量化准确度；",
+          "贝叶斯更新：新证据到来时小幅修正，而非全盘推翻；",
+          "团队智慧：好的预测团队胜过个体预测者的总和。",
+        ]},
+        { type: "h2", text: "「永远在迭代」" },
+        { type: "p", text: "全书最打动我的一句总结：超级预测者不是「达到了终点」，而是「永远在测试版」。报告最后附上泰洛克的超预测十诫，以及把这套思维带入日常决策的具体做法。" },
+        { type: "quote", text: "预测能力 = 可训练的技能，而非神秘天赋。" },
+        { type: "link", href: "files/superforecasting.pptx", text: "下载完整读书报告（PPTX · 14 页）" },
+      ],
+    },
+    en: {
+      title: "Book Report: Superforecasting",
+      excerpt:
+        "Tetlock's twenty-year verdict: forecasting is a trainable skill, not a gift. Five core skills plus the Ten Commandments.",
+      content: [
+        { type: "p", text: "Superforecasting sums up Philip Tetlock and Dan Gardner's twenty years of forecasting research. I turned my reading into a 14-slide report; this post walks you through it, with the full deck downloadable at the end." },
+        { type: "h2", text: "The thesis: forecasting is a trainable skill" },
+        { type: "p", text: "Rigorous forecasting tournaments showed that a crowd of serious amateurs could beat professional analysts and even intelligence experts over the long run. Superforecasters aren't geniuses — they're ordinary people with specific habits of mind. In Berlin's fable, the fox beats the hedgehog: someone who knows many small things forecasts better than someone who knows one big thing." },
+        { type: "h2", text: "Five core skills" },
+        { type: "list", items: [
+          "Fermi decomposition: break unanswerable big questions into estimable small ones.",
+          "The outside view: start from base rates, then consider specifics.",
+          "Probabilistic thinking: speak in probabilities, not yes/no; measure with Brier scores.",
+          "Bayesian updating: nudge beliefs with new evidence instead of overturning them.",
+          "Team wisdom: a good forecasting team beats the sum of its individuals.",
+        ]},
+        { type: "h2", text: "\"Perpetual beta\"" },
+        { type: "p", text: "The line that stayed with me: superforecasters never \"arrive\" — they are permanently in beta. The deck ends with Tetlock's Ten Commandments and concrete ways to bring this mindset into everyday decisions." },
+        { type: "quote", text: "Forecasting is a trainable skill, not a mystical gift." },
+        { type: "link", href: "files/superforecasting.pptx", text: "Download the full report (PPTX · 14 slides)" },
+      ],
+    },
+  },
+  {
     id: "thinking-fast-and-slow",
     date: "2026-08-12",
     tags: ["读书", "行为经济学"],
