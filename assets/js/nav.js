@@ -100,6 +100,33 @@
     header.querySelector(".lang-btn").addEventListener("click", () => Lang.toggle());
 
     Lang.apply(); // translate injected skeleton (incl. static page copy)
+
+    injectAnalytics();
+  }
+
+  /* ---------- Analytics (Microsoft Clarity) ---------- */
+  function injectAnalytics() {
+    // Clarity snippet — Project ID zjh3focckr
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "zjh3focckr");
+
+    // Track report downloads as Clarity events ("download" + file name)
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest("a.article-dl");
+      if (a && window.clarity) {
+        window.clarity("event", "download", a.getAttribute("href"));
+      }
+    });
   }
 
   if (document.readyState === "loading") {
